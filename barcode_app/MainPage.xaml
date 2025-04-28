@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="barcode_app.MainPage"
+             BackgroundColor="#FAFAFA">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="28">
+
+            <VerticalStackLayout Spacing="12">
+                <Image 
+                    Source="dotnet_bot.png"
+                    WidthRequest="60"
+                    HorizontalOptions="Start" />
+            
+                <Label
+                        Text="Find your food's information"
+                        FontSize="36"
+                        FontAttributes="Bold"
+                        TextColor="#2D2D2D" />
+            </VerticalStackLayout>
+
+            
+                
+            <VerticalStackLayout Spacing="20">
+                
+                <Label
+                    Text="Barcode"
+                    FontSize="24"
+                    FontAttributes="Bold"
+                    TextColor="#2D2D2D" />
+
+                <Border BackgroundColor="#FFFFFF" StrokeShape="RoundRectangle 8" Padding="16">
+                    <VerticalStackLayout Spacing="12">
+                        <Label
+                            Text="Barcode Number"
+                            FontSize="16"
+                            TextColor="#444"
+                            FontAttributes="Bold" />
+
+                        <Entry x:Name="BarcodeEntry"
+                            Placeholder="Manually enter barcode or scan with camera"
+                            Keyboard="Numeric"
+                            BackgroundColor="White"
+                            TextColor="#333"
+                            PlaceholderColor="#AAA"
+                            HeightRequest="40"
+                            />
+                        
+                        <HorizontalStackLayout HorizontalOptions="Center" Spacing="16">
+                            <Button
+                                x:Name="FindBtn"
+                                Text="Search"
+                                TextColor="White"
+                                BackgroundColor="#2f089e"
+                                CornerRadius="10"
+                                Padding="12,6"
+                                Clicked="FindBtn_Clicked" />
+
+                            <Button
+                                x:Name="ScanBarcodeBtn"
+                                Text="Scan With Camera"
+                                TextColor="#2f089e"
+                                BackgroundColor="White"
+                                BorderColor="#2f089e"
+                                BorderWidth="1"
+                                CornerRadius="10"
+                                Padding="12,6"
+                                Clicked="ScanBarcodeBtn_Clicked" />
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </Border>
+
+                <Label
+                    Text="Food Information"
+                    FontSize="24"
+                    FontAttributes="Bold"
+                    TextColor="#2D2D2D" />
+
+                <Border BackgroundColor="#FFFFFF" StrokeShape="RoundRectangle 8" Padding="16">
+                    <VerticalStackLayout Spacing="12">
+
+                        <Label x:Name="LabelProduct"
+                            FontSize="18"
+                            FontAttributes="Bold"
+                            TextColor="#2f089e"
+                            Text="Product:" />
+
+                        <Label x:Name="LabelBrand"
+                            FontSize="16"
+                            TextColor="#444"
+                            Text="Brand:" />
+
+                        <Image x:Name="ImageCover"
+                            HeightRequest="160"
+                            Aspect="AspectFit"
+                            Source="image_coming_soon.png"
+                            HorizontalOptions="Center" />
+
+                        <Label x:Name="LabelIngredients"
+                            FontSize="14"
+                            TextColor="#666"
+                            Text="Ingredients:" />
+
+                        <Label x:Name="LabelCategories"
+                            FontSize="14"
+                            TextColor="#2f089e"
+                            Text="Category:" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Label x:Name="LabelMessage"
+                    FontSize="14"
+                    TextColor="#888" />
+
+                <Label Text="Web API Response"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    TextColor="#2D2D2D"
+                    HorizontalOptions="Center" />
+
+                <Label x:Name="LabelHttpResponse"
+                    FontSize="14"
+                    TextColor="#444"
+                    HorizontalOptions="Center"
+                    Text="No Web API response received" />
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

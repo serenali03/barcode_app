@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="barcode_app.BarcodeScanner"
+             xmlns:cv="clr-namespace:Camera.MAUI;assembly=Camera.MAUI"
+             Title="Barcode Scanner">
+
+    <VerticalStackLayout Padding="24" Spacing="20" BackgroundColor="#FAFAFA">
+        <Label
+                Text="Start Scanning"
+                FontSize="24"
+                FontAttributes="Bold"
+                TextColor="#2D2D2D" />
+
+        <Label
+            Text="Place the camera towards the barcode to scan and retrieve the food information."
+            FontSize="16"
+            TextColor="#444"
+            FontAttributes="Bold" />
+
+        <Border BackgroundColor="#FFFFFF" StrokeShape="RoundRectangle 8">
+                <cv:CameraView x:Name="cameraView"
+                    WidthRequest="300" HeightRequest="300"
+                    CamerasLoaded="cameraView_CamerasLoaded"
+                    BarCodeDetectionEnabled="True"
+                    BarcodeDetected="cameraView_BarcodeDetected" />
+        </Border>   
+    </VerticalStackLayout>     
+        
+    
+</ContentPage>

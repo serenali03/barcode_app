@@ -1,0 +1,4 @@
+/Users/serenali/Downloads/exchange/IMSE2113/3036461585_ID/barcode_app/barcode_app/bin/Release/net9.0-android/publish/com.companyname.barcode_app-Signed.aab
+/Users/serenali/Downloads/exchange/IMSE2113/3036461585_ID/barcode_app/barcode_app/bin/Release/net9.0-android/publish/com.companyname.barcode_app.aab
+/Users/serenali/Downloads/exchange/IMSE2113/3036461585_ID/barcode_app/barcode_app/bin/Release/net9.0-android/publish/com.companyname.barcode_app-Signed.apk
+/Users/serenali/Downloads/exchange/IMSE2113/3036461585_ID/barcode_app/barcode_app/bin/Release/net9.0-android/publish/_Microsoft.Android.Resource.Designer.dll

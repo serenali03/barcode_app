@@ -1,0 +1,122 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/serenali/Downloads/exchange/IMSE2113/3036461585_ID/barcode_app/barcode_app/barcode_app.csproj": {}
+  },
+  "projects": {
+    "/Users/serenali/Downloads/exchange/IMSE2113/3036461585_ID/barcode_app/barcode_app/barcode_app.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/serenali/Downloads/exchange/IMSE2113/3036461585_ID/barcode_app/barcode_app/barcode_app.csproj",
+        "projectName": "barcode_app",
+        "projectPath": "/Users/serenali/Downloads/exchange/IMSE2113/3036461585_ID/barcode_app/barcode_app/barcode_app.csproj",
+        "packagesPath": "/Users/serenali/.nuget/packages/",
+        "outputPath": "/Users/serenali/Downloads/exchange/IMSE2113/3036461585_ID/barcode_app/barcode_app/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "/Users/serenali/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0-android"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0-android35.0": {
+            "targetAlias": "net9.0-android",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0-android35.0": {
+          "targetAlias": "net9.0-android",
+          "dependencies": {
+            "Camera.MAUI": {
+              "target": "Package",
+              "version": "[1.5.1, )"
+            },
+            "Camera.MAUI.ZXing": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[11.2.0, )"
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Maui.Controls": {
+              "target": "Package",
+              "version": "[9.0.50, )"
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.3, )",
+              "autoReferenced": true
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "ZXing.Net.MAUI": {
+              "target": "Package",
+              "version": "[0.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[9.0.4, 9.0.4]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.Android": {
+              "privateAssets": "all"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "android-arm64": {
+          "#import": []
+        },
+        "android-x64": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
