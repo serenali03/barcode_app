@@ -8,24 +8,19 @@
         <VerticalStackLayout Padding="24" Spacing="28">
 
             <VerticalStackLayout Spacing="12">
-                <Image 
-                    Source="dotnet_bot.png"
-                    WidthRequest="60"
-                    HorizontalOptions="Start" />
             
                 <Label
-                        Text="Find your food's information"
+                        Text="Find your art's information"
                         FontSize="36"
                         FontAttributes="Bold"
                         TextColor="#2D2D2D" />
             </VerticalStackLayout>
 
-            
                 
             <VerticalStackLayout Spacing="20">
                 
                 <Label
-                    Text="Barcode"
+                    Text="Artwork"
                     FontSize="24"
                     FontAttributes="Bold"
                     TextColor="#2D2D2D" />
@@ -33,13 +28,13 @@
                 <Border BackgroundColor="#FFFFFF" StrokeShape="RoundRectangle 8" Padding="16">
                     <VerticalStackLayout Spacing="12">
                         <Label
-                            Text="Barcode Number"
+                            Text="Artwork ID"
                             FontSize="16"
                             TextColor="#444"
                             FontAttributes="Bold" />
 
-                        <Entry x:Name="BarcodeEntry"
-                            Placeholder="Manually enter barcode or scan with camera"
+                        <Entry x:Name="ArtworkEntry"
+                            Placeholder="Enter artwork ID number"
                             Keyboard="Numeric"
                             BackgroundColor="White"
                             TextColor="#333"
@@ -57,16 +52,6 @@
                                 Padding="12,6"
                                 Clicked="FindBtn_Clicked" />
 
-                            <Button
-                                x:Name="ScanBarcodeBtn"
-                                Text="Scan With Camera"
-                                TextColor="#2f089e"
-                                BackgroundColor="White"
-                                BorderColor="#2f089e"
-                                BorderWidth="1"
-                                CornerRadius="10"
-                                Padding="12,6"
-                                Clicked="ScanBarcodeBtn_Clicked" />
                         </HorizontalStackLayout>
                     </VerticalStackLayout>
                 </Border>
